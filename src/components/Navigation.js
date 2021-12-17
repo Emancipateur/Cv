@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import { NavLink} from 'react-router-dom'
 
 const Navigation = () => {
     return (
@@ -14,16 +14,16 @@ const Navigation = () => {
         <div className="navigation">
             <ul>
                 <li>
-                    <Link to="/" activeClassName="navActive"><i className="fas fa-home"></i><span>Home</span></Link>
+                    <NavLink to="/" activeClassName={(navData)=> navData.isActive ? "active" : ""}><i className="fas fa-home"></i><span>Home</span></NavLink>
                 </li>
                 <li>
-                    <Link to="/comptences" activeClassName="navActive"><i className="fas fa-mountain"></i><span>Compétence</span></Link>
+                    <NavLink to="/comptences"activeClassName={(navData)=> navData.isActive ? "active" : ""}><i className="fas fa-mountain"></i><span>Compétence</span></NavLink>
                 </li>
                 <li>
-                    <Link to="/portfolio" activeClassName="navActive"><i className="fas fa-images"></i><span>Portfolio</span></Link>
+                    <NavLink to="/portfolio" activeClassName={(navData)=> navData.isActive ? "active" : ""}><i className="fas fa-images"></i><span>Portfolio</span></NavLink>
                 </li>
                 <li>
-                    <Link to="/contact" activeClassName="navActive"><i className="fas fa-address-book"></i><span>Contact</span></Link>
+                    <NavLink to="/contact" activeClassName={(navData)=> navData.isActive ? "active" : ""}><i className="fas fa-address-book"></i><span>Contact</span></NavLink>
                 </li>
             </ul>
         </div>
