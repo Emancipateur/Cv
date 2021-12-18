@@ -1,9 +1,19 @@
 import React from 'react';
+import Experience from '../components/knowledges/Experience';
+import Hobbies from '../components/knowledges/Hobbies';
+import Languages from '../components/knowledges/Languages';
+import OthersSkills from '../components/knowledges/OthersSkills';
+import Navigation from '../components/Navigation';
 
 const Knowledges = () => {
     return (
-        <div>
-            Knowledges
+        <div className="knowledges">
+            <Navigation />
+         <div className="knowledgesContent"></div>
+         <Languages />
+         <Experience />
+         <OthersSkills />
+         <Hobbies />
         </div>
     );
 };
