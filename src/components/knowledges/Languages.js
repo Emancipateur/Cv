@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ProgressBar from './ProgressBar';
 
 class Languages extends Component {
 
@@ -21,9 +22,20 @@ class Languages extends Component {
 
 
     render() {
+        let {languages,framworks} = this.state;
+       
         return (
-            <div>
-                
+            <div className="languagesFrameworks">
+                <ProgressBar
+                languages={languages}
+                className="languagesDisplay"
+                title="languages"
+                />
+                <ProgressBar 
+                languages={framworks}
+                className="frameworksDisplay"
+                title="framworks & bibliothèques"
+                />
             </div>
         );
     }
