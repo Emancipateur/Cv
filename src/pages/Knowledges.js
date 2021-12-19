@@ -3,7 +3,7 @@ import React from 'react';
 const Knowledges = () => {
     return (
         <div>
-            Knowledges
+            Knowledges TEST
         </div>
     );
 };
