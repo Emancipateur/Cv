@@ -1,0 +1,27 @@
+.experience{
+    
+    #buttonExp{
+        font-family: $font-1;
+            font-size: 0.8rem;
+            background: $color-3;
+            margin-left: 1rem;
+            transform: translateY(-3px);
+            padding: .3rem 2rem;
+            border-radius: $borderRadius;
+            box-shadow: 0 3px 1px rgb(15, 15, 15);
+            transition: 0.2s ease;
+
+        &:hover{
+            background-color: $color-4;
+        }
+    }
+
+    #experiencepara{
+        padding: 1.5rem 0.5rem
+
+    }
+}
+
+.showExp{
+    display: none;
+}

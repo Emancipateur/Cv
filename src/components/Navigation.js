@@ -6,7 +6,7 @@ const Navigation = () => {
   <div className="sidebar">
       <div className="id">
           <div className="idContent">
-              <img src="./media/profile.jpeg" alt="profil-pic" />
+              <img src="./media/profile.jpg" alt="profil-pic" />
               <h3>Mon nom </h3>
           </div>
       </div>
@@ -14,16 +14,16 @@ const Navigation = () => {
         <div className="navigation">
             <ul>
                 <li>
-                    <NavLink to="/" activeClassName={(navData)=> navData.isActive ? "active" : ""}><i className="fas fa-home"></i><span>Home</span></NavLink>
+                    <NavLink to="/" className={(navData)=> navData.isActive ? "active" : ""}><i className="fas fa-home"></i><span>Home</span></NavLink>
                 </li>
                 <li>
-                    <NavLink to="/comptences"activeClassName={(navData)=> navData.isActive ? "active" : ""}><i className="fas fa-mountain"></i><span>Compétence</span></NavLink>
+                    <NavLink to="/comptences" className={(navData)=> navData.isActive ? "active" : ""}><i className="fas fa-mountain"></i><span>Compétence</span></NavLink>
                 </li>
                 <li>
-                    <NavLink to="/portfolio" activeClassName={(navData)=> navData.isActive ? "active" : ""}><i className="fas fa-images"></i><span>Portfolio</span></NavLink>
+                    <NavLink to="/portfolio" className={(navData)=> navData.isActive ? "active" : ""}><i className="fas fa-images"></i><span>Portfolio</span></NavLink>
                 </li>
                 <li>
-                    <NavLink to="/contact" activeClassName={(navData)=> navData.isActive ? "active" : ""}><i className="fas fa-address-book"></i><span>Contact</span></NavLink>
+                    <NavLink to="/contact" className={(navData)=> navData.isActive ? "active" : ""}><i className="fas fa-address-book"></i><span>Contact</span></NavLink>
                 </li>
             </ul>
         </div>
