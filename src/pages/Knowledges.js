@@ -8,7 +8,6 @@ import Navigation from '../components/Navigation';
 const Knowledges = () => {
     return (
 
-
         <div className="knowledges">
             <Navigation />
          <div className="knowledgesContent">
