@@ -4,6 +4,22 @@ import Project from './Project';
 
 const ProjectList = () => {
 
+    // const  projects = portfolioData
+    // const radios =[
+    //     {id: 1, value: "javascript"},
+    //     {id: 2, value: "php"},
+    //     {id: 3, value: "react"},
+    //     {id: 4, value: "css"},
+    // ]
+   
+    // const [selectedRadio, setSelectedRadio] = useState('javascript')
+   
+    // const handleRadio = (e) => {
+    //     setSelectedRadio(e.target.value)
+    // }
+   
+   
+
  const [projects, setProject] = useState(portfolioData)
  const [radios, setRadios] = useState([
      {id: 1, value: "javascript"},
