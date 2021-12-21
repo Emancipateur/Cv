@@ -26,7 +26,7 @@ const ProjectList = () => {
             radios.map((radio) => {
                 return (
                     <li key={radio.id}>
-                        <input type="radio" name="radio" checked={radio.value === selectedRadio} value={radio.value} id={radio.id}
+                        <input type="radio" name="radio" checked={radio.value === selectedRadio} value={radio.value} id={radio.value}
                         onChange={handleRadio} />
                         <label htmlFor={radio.value}>{radio.value}</label>
                     </li>                
